@@ -7,10 +7,10 @@ https://pyautogui.readthedocs.io/en/latest/index.html
 1 AUTOGUIをgit cloneするか、zipファイルをダウンロードする
 
 2 AUTOGUIに移動し、puautoguiをインストールする
-ターミナル上で pip install pyautogui
+ターミナル上でAUTOGUIフォルダに移動し、 pip install pyautogui
 
 3 position.pyを実行し、ボタンの座標を確認する
-ターミナル上でAUTOGUIフォルダに移動し、 python position.py
+ターミナル上で python position.py
 
 3 auto.pyを編集する。座標、繰り返したい回数を書き込む。
 
