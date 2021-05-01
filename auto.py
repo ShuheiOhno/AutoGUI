@@ -18,7 +18,7 @@ for i in range(repeatNumber):
     time.sleep(2)
 
     # エンターキーを押す
-    pyautogui.keyDown('enter')
+    # pyautogui.keyDown('enter')
 
     # 3秒待った後、ボタンをクリックする
     time.sleep(3)
