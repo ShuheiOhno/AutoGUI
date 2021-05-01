@@ -1,38 +1,24 @@
+# 最初に、クリックするボタンの座標を、position.pyを実行して測定してください。
+
 import pyautogui
 import time
 
 pyautogui.PAUSE = 1
 pyautogui.FAILSAFE = True
 
-# # 削除ボタンにカーソルを持っていく
-# # 削除ボタンをクリック
-
+# クリックを繰り返す回数
 repeatNumber = 9000
 for i in range(repeatNumber):
 
-    pyautogui.click(341,359,duration=1)
-    # pyautogui.click(1100,1100,duration=1)
+    # position.pyで測定した、ボタンの座標を入力してください。
+    pyautogui.click(x=341,y=359,duration=1)
 
-    # #2秒後はいを押す
+    # 2秒後ボタンを押す
     time.sleep(2)
-    # pyautogui.click(1256,932,duration=1)
-    # pyautogui.moveTo(341,359,duration=1)
+
+    # エンターキーを押します。
     pyautogui.keyDown('enter')
 
-    # pyautogui.moveTo(341,365,duration=4)
-    # pyautogui.moveTo(341,359,duration=3)
-# #     # # 5秒まつ
+    # 3秒待った後、ボタンをクリックします。
     time.sleep(3)
 
-
-
-#mause
-# print('中断するには、ctr+c')
-# try:
-#     while True:
-#         x,y = pyautogui.position()
-#         position_str = 'x: ' + str(x).rjust(4) + 'y: ' + str(y).rjust(4)
-#         print(position_str,end='')
-#         print('\b'*len(position_str), end='',flush=True)
-# except KeyboardInterrupt:
-#     print('終了')
